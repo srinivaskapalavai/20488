@@ -1,0 +1,94 @@
+2048 Game Documentation
+Table of Contents
+Introduction
+Purpose
+Features
+Getting Started
+Prerequisites
+Installation
+Running the Game
+Game Overview
+Rules of 2048
+Controls
+Code Structure
+Main Modules
+File Organization
+Functionality
+Game Initialization
+Board Generation and Display
+User Input Handling
+Game Logic
+Win and Lose Conditions
+Future Improvements
+Contributing
+License
+1. Introduction
+Purpose
+The purpose of this project is to implement the classic 2048 game in Python. The game provides an engaging puzzle-solving experience where players slide numbered tiles on a grid to combine them and reach the tile with the value of 2048.
+
+Features
+Command-line based gameplay.
+Colorful display of tiles.
+Automatic saving of game state.
+High score tracking.
+2. Getting Started
+Prerequisites
+Python 3.x installed.
+Basic understanding of Python programming concepts.
+Installation
+Clone the repository: git clone https://github.com/yourusername/2048-game.git
+Navigate to the project directory: cd 2048-game
+Install dependencies: pip install colorama (if using Colorama for colored terminal output)
+Running the Game
+Open a terminal window.
+Navigate to the project directory.
+Run the game: python main.py
+3. Game Overview
+Rules of 2048
+The game is played on a 4x4 grid. Players use arrow keys to move tiles in one of four directions: up, down, left, or right. When two tiles with the same number collide while moving, they merge into a single tile with the sum of their values. The goal is to create a tile with the value of 2048.
+
+Controls
+Up: Move tiles upwards.
+Down: Move tiles downwards.
+Left: Move tiles to the left.
+Right: Move tiles to the right.
+Q: Quit the game.
+4. Code Structure
+Main Modules
+main.py: Entry point of the game.
+board.py: Contains the Board class responsible for managing the game grid.
+tile.py: Defines the Tile class representing individual tiles on the board.
+game_manager.py: Manages the game state, logic, and user interactions.
+File Organization
+css
+Copy code
+2048-game/
+├── main.py
+├── board.py
+├── tile.py
+└── game_manager.py
+5. Functionality
+Game Initialization
+On starting the game, a new 4x4 grid is initialized with two random tiles (2 or 4).
+
+Board Generation and Display
+The Board class handles generating the grid and displaying it with colored tiles using the Colorama library.
+
+User Input Handling
+User inputs (arrow keys and 'Q' for quitting) are handled in the GameManager class.
+
+Game Logic
+The GameManager class manages the main game loop and enforces the rules of the 2048 game.
+
+Win and Lose Conditions
+The game checks for win and lose conditions after each move. The player wins when they achieve a 2048 tile. The player loses if there are no valid moves left.
+
+6. Future Improvements
+Implement a graphical user interface (GUI) using a library like Pygame or Tkinter.
+Add sound effects and animations for a more engaging experience.
+Implement an AI player using algorithms like the Minimax algorithm or expectimax to play the game automatically.
+7. Contributing
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, please create a pull request or issue on the GitHub repository.
+
+8. License
+This project is licensed under the MIT License
